@@ -1,0 +1,44 @@
+.header {
+  height: 100vh;
+  background-image: url(../images/cover.jpg);
+  background-size: cover;
+  background-position: center;
+
+  &__burguer {
+    background-color: #0271bc;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    & a {
+      padding: 10px;
+    }
+  }
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    transform: translateY(400px);
+    align-items: center;
+    color: white;
+    gap: 10px;
+
+    &--title {
+      text-transform: uppercase;
+      width: 250px;
+      text-align: center;
+    }
+
+    &--row {
+      width: 45px;
+      height: 45px;
+      background-color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+    }
+  }
+}
