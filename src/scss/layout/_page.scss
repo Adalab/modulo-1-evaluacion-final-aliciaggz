@@ -6,6 +6,7 @@
 
       .small {
         color: $colorLightBlue;
+        font-family: $fontRobotoReg;
       }
 
       .article-title {
@@ -16,6 +17,7 @@
 
       .article-text {
         color: $colorgrey;
+        font-family: $fontRobotoReg;
       }
 
       .sect1-button {
@@ -23,8 +25,10 @@
         margin-bottom: 45px;
         width: 76px;
         height: 45px;
+        background-color: white;
         border-radius: 2em;
-        border: solid 2px $colorOrange;
+        border: solid 3px $colorOrange;
+        font-family: $fontRobotoReg;
 
         & a {
           text-decoration: none;
@@ -38,12 +42,49 @@
   &_sect2 {
     background-color: $colorIceBlue;
     display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(5, 1fr);
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(6, 1fr);
     row-gap: 45px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     line-height: 30px;
+
+    &--title {
+      grid-column: 1/7;
+      text-align: center;
+      grid-row: 1;
+      padding-top: 30px;
+      font-family: $fontRobotoSlab;
+      font-size: 25px;
+    }
+
+    &--article-one {
+      grid-column: 1/7;
+      grid-row: 2;
+      text-align: center;
+    }
+    &--article-two {
+      grid-column: 3/7;
+      grid-row: 3;
+    }
+    &--article-three {
+      grid-column: 3/7;
+      grid-row: 4;
+    }
+  }
+
+  .sect2-button {
+    width: 180px;
+    height: 45px;
+    grid-column: 3;
+    grid-row: 5;
+    background-color: #f26002;
+    border-radius: 2em;
+    border: none;
+    font-family: $fontRobotoReg;
+    font-size: 18px;
+
+    & a {
+      color: white;
+      text-decoration: none;
+    }
   }
 }
