@@ -1,6 +1,12 @@
 .header {
   height: 100vh;
-  background-image: url(../images/cover.jpg);
+
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0),
+      rgba(0, 0, 0, 0.589)
+    ),
+    url(../images/cover.jpg);
+
   background-size: cover;
   background-position: center;
 
@@ -21,16 +27,18 @@
   &__text {
     display: flex;
     flex-direction: column;
-    transform: translateY(300px);
+    transform: translateY(350px);
     align-items: center;
     color: white;
     line-height: 55px;
     font-family: $fontRobotoSlab;
 
     &--title {
-      font-size: 50px;
+      font-size: 70px;
       text-transform: uppercase;
       text-align: center;
+      width: 500px;
+      line-height: 80px;
     }
 
     &--subtitle {
