@@ -6,11 +6,12 @@
 
   &__burguer {
     background-color: #0271bc;
-    width: 40px;
-    height: 40px;
+    width: 45px;
+    height: 45px;
     display: flex;
     justify-content: center;
     align-items: center;
+    position: fixed;
 
     & a {
       padding: 10px;
@@ -20,15 +21,22 @@
   &__text {
     display: flex;
     flex-direction: column;
-    transform: translateY(400px);
+    transform: translateY(300px);
     align-items: center;
     color: white;
-    gap: 10px;
+    line-height: 55px;
+    font-family: $fontRobotoSlab;
 
     &--title {
+      font-size: 50px;
       text-transform: uppercase;
-      width: 250px;
       text-align: center;
+    }
+
+    &--subtitle {
+      font-size: 18px;
+      font-weight: 100;
+      margin-bottom: 30px;
     }
 
     &--row {

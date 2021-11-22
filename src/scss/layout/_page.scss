@@ -1,0 +1,49 @@
+.main {
+  &_sect1 {
+    padding: 20px;
+    &--article {
+      line-height: 35px;
+
+      .small {
+        color: $colorLightBlue;
+      }
+
+      .article-title {
+        font-family: $fontRobotoSlab;
+        width: 250px;
+        margin-bottom: 15px;
+      }
+
+      .article-text {
+        color: $colorgrey;
+      }
+
+      .sect1-button {
+        margin-top: 25px;
+        margin-bottom: 45px;
+        width: 76px;
+        height: 45px;
+        border-radius: 2em;
+        border: solid 2px $colorOrange;
+
+        & a {
+          text-decoration: none;
+          color: $colorOrange;
+          font-size: 20px;
+        }
+      }
+    }
+  }
+
+  &_sect2 {
+    background-color: $colorIceBlue;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    row-gap: 45px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 30px;
+  }
+}
