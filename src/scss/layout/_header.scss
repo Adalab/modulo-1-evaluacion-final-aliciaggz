@@ -10,7 +10,12 @@
   background-size: cover;
   background-position: center;
 
-  &__burguer {
+  &__close {
+    display: none;
+    width: 20px;
+  }
+
+  &__burger {
     background-color: #0271bc;
     width: 45px;
     height: 45px;
@@ -19,31 +24,55 @@
     align-items: center;
     position: fixed;
 
+    &:hover {
+      .header__burger-img {
+        display: none;
+      }
+
+      .header__close {
+        display: flex;
+      }
+    }
+
     & a {
       padding: 10px;
     }
+  }
+
+  &__close {
+    display: none;
   }
 
   &__text {
     display: flex;
     flex-direction: column;
     height: 90vh;
+    width: 100%;
     justify-content: flex-end;
     align-items: center;
     color: white;
     line-height: 55px;
     font-family: $fontRobotoSlab;
 
+    @media (min-width: 1024px) {
+      height: 100vh;
+      padding-bottom: 20px;
+    }
+
     &--title {
-      font-size: 70px;
+      font-size: 3em;
       text-transform: uppercase;
-      text-align: center;
       width: 500px;
+      text-align: center;
       line-height: 80px;
+
+      @media (min-width: 768px) {
+        font-size: 4em;
+      }
     }
 
     &--subtitle {
-      font-size: 18px;
+      font-size: 1.15em;
       font-weight: 100;
       margin-bottom: 30px;
     }

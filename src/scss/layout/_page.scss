@@ -96,6 +96,7 @@
     &--article {
       text-align: center;
       width: 160px;
+
       @media (min-width: 1024px) {
         width: 250px;
       }
@@ -127,6 +128,7 @@
     .sect2_article-title {
       font-family: $fontRobotoSlab;
       font-size: 1.1rem;
+      margin-bottom: 10px;
     }
     .sect2_article--text {
       font-family: $fontRobotoReg;
