@@ -7,6 +7,18 @@
   line-height: 30px;
   font-family: $fontRobotoReg;
 
+  &__lists {
+    @media (min-width: 768px) {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: space-around;
+      width: 100%;
+    }
+    @media (min-width: 1000px) {
+      justify-content: center;
+    }
+  }
+
   &__arrow {
     width: 45px;
     height: 45px;
@@ -18,17 +30,55 @@
     box-shadow: black 0px 2px 6px;
     transform: translateY(-25px);
 
+    @keyframes move {
+      25% {
+        transform: translateY(8px);
+      }
+
+      50% {
+        transform: translateY(0px);
+      }
+
+      75% {
+        transform: translateY(8px);
+      }
+
+      100% {
+        transform: translateY(0px);
+      }
+    }
     &--img {
       transform: translateY(5px);
+      padding: 20px;
+
+      &:hover {
+        animation: move 2s infinite;
+      }
     }
   }
 
   &__nav {
+    &.first {
+      @media (min-width: 768px) {
+        padding-bottom: 45px;
+        order: 1;
+      }
+    }
+
+    &.second {
+      @media (min-width: 768px) {
+      }
+    }
+
     &--list {
       list-style-type: none;
       padding-top: 40px;
       text-transform: uppercase;
       text-align: center;
+
+      @media (min-width: 768px) {
+        text-align: justify;
+      }
     }
 
     &--item a {
@@ -47,5 +97,9 @@
     font-family: $fontRobotoReg;
     font-size: 20px;
     line-height: 30px;
+    @media (min-width: 768px) {
+      align-items: flex-start;
+      order: 1;
+    }
   }
 }
