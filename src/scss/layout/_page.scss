@@ -56,18 +56,25 @@
       font-size: 25px;
     }
 
-    &--article-one {
+    &--article.one {
       grid-column: 1/7;
       grid-row: 2;
       text-align: center;
     }
-    &--article-two {
+    &--article.two {
       grid-column: 3/7;
       grid-row: 3;
     }
     &--article-three {
       grid-column: 3/7;
       grid-row: 4;
+    }
+
+    .sect2_article-title {
+      font-family: $fontRobotoSlab;
+    }
+    .sect2_article--text {
+      font-family: $fontRobotoReg;
     }
   }
 
