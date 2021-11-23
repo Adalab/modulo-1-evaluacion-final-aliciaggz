@@ -3,8 +3,16 @@
     padding: 39px;
     padding-top: 30px;
     padding-bottom: 0px;
+
+    @media (min-width: 1024px) {
+    }
+
     &--article {
       line-height: 35px;
+
+      @media (min-width: 1024px) {
+        width: 700px;
+      }
 
       .small {
         color: $colorLightBlue;
@@ -15,6 +23,9 @@
         font-family: $fontRobotoSlab;
         width: 250px;
         margin-bottom: 15px;
+        @media (min-width: 768px) {
+          width: 100%;
+        }
       }
 
       .article-text {
@@ -57,6 +68,8 @@
     grid-template-rows: repeat(5, 1fr);
     row-gap: 45px;
     line-height: 30px;
+    justify-items: center;
+    padding-bottom: 60px;
 
     @media (min-width: 768px) {
       grid-template-columns: 1fr 1fr 1fr;
@@ -69,36 +82,50 @@
       grid-row: 1;
       padding-top: 30px;
       font-family: $fontRobotoSlab;
-      font-size: 25px;
+      font-size: 2em;
+      @media (min-width: 768px) {
+        grid-column: 2;
+      }
     }
 
     &--article {
       text-align: center;
+      width: 160px;
+      @media (min-width: 1024px) {
+        width: 250px;
+      }
 
       &.one {
         grid-row: 2;
 
         @media (min-width: 768px) {
+          grid-column: 1;
         }
       }
       &.two {
         grid-row: 3;
         @media (min-width: 768px) {
+          grid-column: 2;
+          grid-row: 2;
         }
       }
       &.t3 {
         grid-row: 4;
 
         @media (min-width: 768px) {
+          grid-column: 3;
+          grid-row: 2;
         }
       }
     }
 
     .sect2_article-title {
       font-family: $fontRobotoSlab;
+      font-size: 1.1rem;
     }
     .sect2_article--text {
       font-family: $fontRobotoReg;
+      font-size: 1rem;
     }
   }
 
@@ -113,6 +140,9 @@
     font-size: 18px;
 
     @media (min-width: 768px) {
+      width: 180px;
+      grid-column: 2;
+      grid-row: 3;
     }
 
     &:hover {
