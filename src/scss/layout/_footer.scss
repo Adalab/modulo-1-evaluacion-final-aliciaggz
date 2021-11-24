@@ -16,6 +16,7 @@
     }
     @media (min-width: 1000px) {
       justify-content: center;
+      // space-evenly
     }
   }
 
@@ -64,7 +65,7 @@
         order: 1;
       }
 
-      @media (min-width: 1000px) {
+      @media (min-width: 1024px) {
         width: 160px;
         margin-right: 30px;
       }

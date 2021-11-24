@@ -46,6 +46,7 @@
         border-radius: 2em;
         border: solid 3px $colorOrange;
         font-family: $fontRobotoReg;
+        transition: background-color 0.5s linear;
 
         &:hover {
           background-color: $colorOrange;
@@ -145,6 +146,7 @@
     border: none;
     font-family: $fontRobotoReg;
     font-size: 18px;
+    transition: background-color 70ms linear, border 90ms linear;
 
     @media (min-width: 768px) {
       width: 180px;
