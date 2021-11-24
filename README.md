@@ -6,10 +6,10 @@ The purpose of the exam is to create a responsive website through the provided d
 
 The technical requirements are:
 
--Use Sass.
--Use flexbox and CSS Grid.
--Use media queries.
--Solve some interactions using transitions
+- Use Sass.
+- Use flexbox and CSS Grid.
+- Use media queries.
+- Solve some interactions using transitions
 
 In addition, some interactions had to be added:
 
