@@ -91,12 +91,13 @@
       font-size: 2em;
       @media (min-width: 768px) {
         grid-column: 2;
+        width: 400px;
       }
     }
 
     &--article {
       text-align: center;
-      width: 160px;
+      width: 200px;
 
       @media (min-width: 1024px) {
         width: 250px;
@@ -118,6 +119,7 @@
       }
       &.t3 {
         grid-row: 4;
+        padding-bottom: 20px;
 
         @media (min-width: 768px) {
           grid-column: 3;
@@ -128,12 +130,12 @@
 
     .sect2_article-title {
       font-family: $fontRobotoSlab;
-      font-size: 1.1rem;
+      font-size: 1.4em;
       margin-bottom: 10px;
     }
     .sect2_article--text {
       font-family: $fontRobotoReg;
-      font-size: 1rem;
+      font-size: 1.2rem;
     }
   }
 
@@ -163,6 +165,7 @@
       color: white;
       text-decoration: none;
       padding: 20px;
+      transition: color;
 
       &:hover {
         color: $colorOrange;
